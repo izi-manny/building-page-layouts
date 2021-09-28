@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "sidebar-left middle sidebar-right"
+    "sidebar-left footer sidebar-right";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(73, 73, 73);
+    height: 14vh;
+}
+
+#sidebar-left {
+    grid-area: sidebar-left;
+    margin: 0;
+    justify-self: left;
+}
+
+#middle {
+    background-color: white;
+    margin: 0;
+    grid-area: middle;
+    height: 76vh;
+}
+
+#sidebar-right {
+    grid-area: sidebar-right;
+    margin: 0;
+    justify-self: right;
+}
+
+.sidebar {
+    background-color: rgb(216, 216, 216);
+    height: 86vh;
+    width: 10vw
+}
+
+footer {
+    margin: 0;
+    grid-area: footer;
+    background-color: black;
+    height: 10vh;
+    width: 80vw;
+}
